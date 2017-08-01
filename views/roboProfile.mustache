@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robot HomePage</title>
+    <link rel="stylesheet" href="robotsStyle.css">
+  </head>
+  <body class = "personalRobotPage">
+    <div class = "personalProfileContainer">
+      <div class = 'personalRobotProfile'>
+        <img src = "{{avatar}}" alt = "{{name}}">
+        <div class = "resumeBlock">
+          <h1>{{name}}</h1>
+          {{address.city}} {{address.country}} | {{ #job }}{{ job }}{{ /job }}{{ ^job }}<span> looking for work! <br></span>{{ /job }}  {{company}}
+          {{email}} | {{phone}}
+        </div>
+      </div>
+      <div class = 'roboEduSkill'>
+        <table>
+          <tr>
+            {{ #university }}
+            <td><strong>Education<strong></td>
+              <td>{{ university }}  </td>
+            {{ /university }}
+            {{ ^university }}
+            {{ /university }}
+          </tr>
+        <tr>
+          <td><strong>Skills<strong></td>
+          <td><ul style="list-style-type:none">{{ #skills }}
+            <li>{{.}}</li>
+            {{ /skills }}
+          </td>
+            </ul>
+        </table>
+        <a href = "/"><br>Back</a>
+      </div>
+    </div>
+  </body>
+</html>

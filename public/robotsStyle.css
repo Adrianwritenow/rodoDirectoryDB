@@ -1,0 +1,69 @@
+
+
+.profileContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.robotProfile{
+  border: 1px solid grey;
+  width: 250px;
+  height: 250px;
+  padding:25px;
+  margin-bottom: 40px;
+
+}
+h2{
+  margin:0px;
+  margin-top: 10px;
+}
+img{
+  width: 200px;
+  margin-left: 20px;
+  margin-top: -15px;
+}
+.personalRobotPage{
+  margin-left: 100px;
+
+}
+
+.personalProfileContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 250px;
+  margin-left: 250px;
+  margin-top: 75px;
+}
+
+
+.personalRobotProfile img{
+  border-radius: 100%;
+  border: 1px solid grey;
+  float: left;
+  padding: 2px;
+}
+.personalRobotProfile{
+  width: 600px;
+  height: 200px;
+}
+span{
+  color:red;
+}
+.resumeBlock{
+  margin-left: 240px;
+}
+.roboEduSkill{
+  margin-left: -62px;
+  padding: 20px;
+
+}
+td, ul{
+  padding-left: 0px;
+  margin-bottom: -15px;
+
+}

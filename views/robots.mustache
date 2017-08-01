@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robot HomePage</title>
+    <link rel="stylesheet" href="robotsStyle.css">
+  </head>
+  <body>
+    <h1>All these guys are robots</h1>
+    <a href= "http://localhost:3000/needWork"> <p>Click here to see who needs a job!</p> </a>
+    <div class = "profileContainer">
+      {{ #users }}
+      <div class = 'robotProfile'>
+        <img src = {{avatar}} alt = {{name}}>
+        <a href="http://localhost:3000/{{username}}"> <h2>{{name}}</h2></a>
+        {{ #job }}{{ job }}{{ /job }}{{ ^job }}<span> looking for work!</span>{{ /job }} {{company}}
+      </div>
+      {{ /users }}
+    </div>
+    </ul>
+  </body>
+</html>
