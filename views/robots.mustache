@@ -7,12 +7,12 @@
   </head>
   <body>
     <h1>All these guys are robots</h1>
-    <a href= "http://localhost:3000/needWork"> <p>Click here to see who needs a job!</p> </a>
+    <a href= "/needWork"> <p>Click here to see who needs a job!</p> </a>
     <div class = "profileContainer">
       {{ #users }}
       <div class = 'robotProfile'>
         <img src = {{avatar}} alt = {{name}}>
-        <a href="http://localhost:3000/{{username}}"> <h2>{{name}}</h2></a>
+        <a href="/{{username}}"> <h2>{{name}}</h2></a>
         {{ #job }}{{ job }}{{ /job }}{{ ^job }}<span> looking for work!</span>{{ /job }} {{company}}
       </div>
       {{ /users }}
